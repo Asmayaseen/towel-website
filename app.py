@@ -4,7 +4,7 @@ from firebase_admin import firestore
 from components import header, footer
 import uuid
 from datetime import datetime
-
+from firebase.firebase_init import db
 # Page config
 st.set_page_config(page_title="🛍️ Towel Shop", layout="wide", page_icon="🛒")
 
