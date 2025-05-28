@@ -3,3 +3,5 @@ firebase/firebase_config.json
 __pycache__/
 .env
 firebase/firebase_config.json
+.streamlit/secrets.toml
+.streamlit/secrets.toml
