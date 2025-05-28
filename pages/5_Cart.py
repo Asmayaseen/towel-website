@@ -1,6 +1,7 @@
 import streamlit as st
 from components import header, footer
 
+
 st.set_page_config(page_title="Your Cart", layout="wide")
 header.show()
 

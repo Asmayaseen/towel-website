@@ -1,40 +1,47 @@
 import streamlit as st
 from components import header, footer
 
+# Page Configuration
 st.set_page_config(page_title="About Us", layout="wide")
+
+# Show Header
 header.show()
 
-# Custom CSS
+# Custom CSS for styling
 st.markdown("""
 <style>
-.about-container {
+
+.about-title {
+    font-size: 3em;
+    font-weight: 700;
+    color: #2E8B57;
+    margin-bottom: 30px;
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    text-shadow: 1px 1px 2px #ccc;
     background: linear-gradient(to bottom right, #f0fff0, #e0ffe0);
     padding: 40px;
     border-radius: 20px;
     margin-top: 30px;
     box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.05);
 }
-.about-title {
-    font-size: 2.8em;
-    font-weight: bold;
-    color: #2E8B57;
-    margin-bottom: 20px;
-    font-family: 'Segoe UI', sans-serif;
-    text-align: center;
-}
 .about-text {
     font-size: 1.2em;
     color: #333;
     line-height: 1.8;
     font-family: 'Segoe UI', sans-serif;
+    padding-right: 15px;
 }
 </style>
 """, unsafe_allow_html=True)
 
-# Layout
+# Main About Us Container
 st.markdown("<div class='about-container'>", unsafe_allow_html=True)
-st.markdown("<div class='about-title'>ℹ️ About Us 🧼</div>", unsafe_allow_html=True)
 
+# About Us Title inside container
+st.markdown("<div class='about-title'>About Us 🧼</div>", unsafe_allow_html=True)
+
+# Columns layout
 col1, col2 = st.columns([1.3, 1])
 
 with col1:
@@ -49,6 +56,8 @@ with col1:
 with col2:
     st.image("assets/about-us.jpg", caption="🧺 Our Premium Towel Collection", use_container_width=True)
 
+# Close container div
 st.markdown("</div>", unsafe_allow_html=True)
 
+# Show Footer
 footer.show()

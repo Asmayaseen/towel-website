@@ -7,19 +7,18 @@ header.show()
 # --- Custom CSS for Styling ---
 st.markdown("""
 <style>
-.contact-container {
+
+.contact-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #8B4513;
+    margin-bottom: 15px;
     background: linear-gradient(to right, #fdfcfb, #e2d1c3);
     padding: 40px;
     border-radius: 20px;
     margin-top: 30px;
     box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.05);
     font-family: 'Segoe UI', sans-serif;
-}
-.contact-title {
-    font-size: 2.5em;
-    font-weight: bold;
-    color: #8B4513;
-    margin-bottom: 15px;
 }
 .contact-description {
     font-size: 1.2em;

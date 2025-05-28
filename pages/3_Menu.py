@@ -11,20 +11,19 @@ if "cart" not in st.session_state:
 # CSS Styling
 st.markdown("""
 <style>
-.menu-container {
-    background: linear-gradient(to right, #e0f7fa, #b2ebf2);
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
-    margin-top: 25px;
-    font-family: 'Segoe UI', sans-serif;
-}
+
 .menu-title {
     text-align: center;
     font-size: 2.8em;
     color: #00796b;
     font-weight: 700;
     margin-bottom: 30px;
+    background: linear-gradient(to right, #e0f7fa, #b2ebf2);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    margin-top: 25px;
+    font-family: 'Segoe UI', sans-serif;
 }
 .product-card {
     background: white;

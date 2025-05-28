@@ -35,6 +35,6 @@ def show():
         📞 <a href="/Contact">Contact</a> |
         🛒 <a href="/Cart">Cart</a> |
         📦 <a href="/Order">Order</a> |
-        🛠️ <a href="/Admin">Admin</a>
+        
     </div>
     """, unsafe_allow_html=True)
